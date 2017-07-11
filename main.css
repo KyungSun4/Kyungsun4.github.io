@@ -1,0 +1,147 @@
+body {
+  font-family: 'Cousine', monospace;
+  background-color: #D8E4E4;
+  margin: 0;
+  padding: 0;
+}
+footer {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.center {
+  text-align: center;
+}
+.nav {
+  list-style: none;
+  font-size: 20px;
+}
+.right {
+  justify-content: flex-end;
+}
+.grid {
+  display: grid;
+}
+.item {
+  flex: auto;
+}
+.right {
+  text-align: right;
+  padding-left: 40px;
+  font-size: 20px;
+  margin: 20px;
+
+}
+.name {
+  padding: 10px;
+  background-color: white;
+  border-radius: 6px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 160px;
+}
+.featuredContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: calc(50vh - 170px);
+}
+.featuredItem {
+  flex: auto;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  border-radius: 6px;
+  margin: 5px;
+  height: 20vh;
+}
+.centerAlignContainer {
+  display: flex;
+  align-items: center;
+
+}
+.logoContainer {
+  flex: auto;
+}
+.logo {
+  display: block;
+  margin: auto;
+  height: 20vh;
+  margin-top: 10vh;
+}
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3){
+    .nav {
+      font-size: 80px;
+    }
+}
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .nav {
+      font-size: 80px;
+    }
+}
+.backImg {
+  position: absolute;
+  z-index: -10;
+
+  clip: rect(0px,100vw,100vh,0px)
+}
+.flex {
+  display: flex;
+  flex-flow: row;
+}
+.verticalTitle {
+  padding: 25px;
+  flex: 40px;
+
+  line-height: 80px;
+}
+h1 {
+  font-size: 80px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 50px;
+}
+.link {
+  padding-left: 10vw;
+}
+.header {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.par {
+  flex: auto;
+  padding: 25px;
+  padding-top: 0;
+}
+.gamesPar {
+  padding-top: 0;
+  padding-top: 70px;
+  flex: auto;
+  padding: 25px;
+  font-size: 24px;
+  color: black;
+}
+a {
+  color: inherit;
+}
+.imgItem {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.gal {
+  padding: 3.15vw;
+  width: 27vw;
+  height: 27vw;
+
+}
