@@ -9,6 +9,7 @@ wave {
   float: left;
 }
 
+
 #wavediv {
   background-color: blue;
   z-index: 45;
@@ -196,6 +197,12 @@ a {
     -webkit-filter: blur(5px);
     /* Safari */
     filter: blur(5px);
+  }
+}
+
+@media (orientation:portrait) {
+  .headImg {
+    clip: rect(5px, calc(100vw + 10px), calc(60vw + 10px), 5px);
   }
 }
 
