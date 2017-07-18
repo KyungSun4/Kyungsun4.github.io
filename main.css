@@ -9,7 +9,6 @@ wave {
   float: left;
 }
 
-
 #wavediv {
   background-color: blue;
   z-index: 45;
@@ -181,7 +180,7 @@ a {
 .headImg {
   width: calc(100vw + 10px);
   position: absolute;
-  clip: rect(5px, calc(100vw + 10px), calc(100vh + 10px), 5px);
+  clip: rect(5px, calc(100vw + 10px), calc(100vh + 10px + 5vh), 5px);
   animation-delay: 5s;
   -webkit-filter: blur(50px);
   /* Safari */
@@ -197,12 +196,6 @@ a {
     -webkit-filter: blur(5px);
     /* Safari */
     filter: blur(5px);
-  }
-}
-
-@media (max-aspect-ratio:4/3) {
-  .headImg {
-    clip: rect(5px, calc(100vw + 10px), calc(60vw + 10px), 5px);
   }
 }
 
@@ -283,6 +276,63 @@ a {
   -webkit-transition: -webkit-transform 2s;
   transition: transform .2s;
 }
+
+.content {
+  position: relative;
+  margin-top: calc(100vh - 30vw - 20vw * 1220 / 2032);
+  padding: 0;
+}
+
 .quote {
+  font-size: 10vw;
+  padding: 0 0;
   position: absolute;
+  z-index: 10;
+  color: white;
+  margin: 0;
+  background-color: purple;
+  overflow: hidden;
+  width: 30px;
+  white-space: nowrap;
+}
+
+.expandAnimation {
+  animation: expand ease-out 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes expand {
+  to {
+    width: 100vw;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.bodyImg {
+  width: calc(100vw + 10px);
+  position: absolute;
+  clip: rect(calc(10vh + 5px), calc(100vw + 10px), calc(90vh + 10px), 5px);
+  animation-delay: 5s;
+  -webkit-filter: blur(50px);
+  /* Safari */
+  filter: blur(50px);
+  animation: unBlur 1s ease-in normal 1;
+  animation-delay: 5.1s;
+  animation-fill-mode: forwards;
+  transform: translate(-5px, -5px);
+  z-index: -20;
+  top: -10vh;
+}
+
+@media (max-aspect-ratio:4/3) {
+  .headImg {
+    clip: rect(5px, calc(100vw + 10px), calc(60vw + 10px), 5px);
+  }
+  .content {
+    margin-top: calc(60vw - 30vw - 20vw * 1220 / 2032);
+  }
 }
