@@ -200,7 +200,7 @@ a {
   }
 }
 
-@media (orientation:portrait) {
+@media (max-aspect-ratio:4/3) {
   .headImg {
     clip: rect(5px, calc(100vw + 10px), calc(60vw + 10px), 5px);
   }
@@ -282,4 +282,7 @@ a {
   animation: rise 1s ease-in-out backwards 1;
   -webkit-transition: -webkit-transform 2s;
   transition: transform .2s;
+}
+.quote {
+  position: absolute;
 }
