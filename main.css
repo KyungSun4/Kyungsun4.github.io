@@ -180,7 +180,7 @@ a {
 .headImg {
   width: calc(100vw + 10px);
   position: absolute;
-  clip: rect(5px, calc(100vw + 10px), calc(100vh + 10px + 5vh), 5px);
+  clip: rect(5px, calc(100vw + 5px), calc(100vh + 5px + 5vh), 5px);
   animation-delay: 5s;
   -webkit-filter: blur(50px);
   /* Safari */
@@ -315,7 +315,7 @@ body {
 .bodyImg {
   width: calc(100vw + 10px);
   position: absolute;
-  clip: rect(calc(10vh + 5px), calc(100vw + 10px), calc(90vh + 10px), 5px);
+  clip: rect(calc(10vh + 5px), calc(100vw + 5px), calc(90vh + 5px), 5px);
   animation-delay: 5s;
   -webkit-filter: blur(50px);
   /* Safari */
