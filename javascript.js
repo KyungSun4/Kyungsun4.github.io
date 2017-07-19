@@ -16,10 +16,16 @@ jQuery.fn.animateAuto = function(prop, speed, callback){
     });
 }
 
+var quoteOut = false;
 
 $(window).scroll(function() {
-  if ($(window).scrollTop() >= $(".quote").offset().top-$(window).height()) {
+  if ($(window).scrollTop() > $(".quote").offset().top-$(window).height() && !quoteOut) {
     $(".quote").animateAuto("width",1000);
+    quoteOut = true;
+  }
+  if ($(window).scrollTop() == 0) {
+    $(".quote").css("width",0);
+    quoteOut=false;
   }
   console.log($(window).scrollTop());
 });
