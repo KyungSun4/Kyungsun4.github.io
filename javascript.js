@@ -17,6 +17,11 @@ jQuery.fn.animateAuto = function(prop, speed, callback){
 }
 
 var quoteOut = false;
+$(".armContainer").hover(function() {
+  $(".rotateOnHover").css("animation-play-state","running");
+},function() {
+  $(".rotateOnHover").css("animation-play-state","paused");
+});
 
 $(window).scroll(function() {
   if ($(window).scrollTop() > $(".quote").offset().top-$(window).height() && !quoteOut) {

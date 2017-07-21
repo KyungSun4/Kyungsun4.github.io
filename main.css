@@ -292,7 +292,7 @@ a {
   margin: 0;
   background-color: purple;
   overflow: hidden;
-  width: 30px;
+  width: 0px;
   white-space: nowrap;
 }
 
@@ -335,4 +335,100 @@ body {
   .content {
     margin-top: calc(60vw - 30vw - 20vw * 1220 / 2032);
   }
+}
+
+.arm {
+  display: block;
+  width: 220px;
+  height: 10px;
+  background-color: #ffff54;
+  margin-top: -200px;
+  position: relative;
+  border-radius: 5px;
+  transform-origin: 150px;
+}
+
+.armContainer {}
+
+.rotateOnHover {
+  animation: rotate 5s infinite;
+  animation-play-state: paused;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes side {
+  to {
+    transform: translateX(290px);
+  }
+}
+
+.vertical {
+  display: block;
+  width: 10px;
+  height: 230px;
+  background-color: #ffff54;
+  margin-left: 140px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.base {
+  display: block;
+  width: 80px;
+  height: 10px;
+  background-color: #ffff54;
+  margin-top: 180px;
+  margin-left: 100px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.crane {
+  padding-top: calc(11vw + 50px);
+  margin-left: 70%;
+}
+
+.line {
+  display: block;
+  width: 3px;
+  height: 100px;
+  background-color: black;
+  margin-top: -190px;
+  margin-left: 5px;
+  transform-origin: 145px;
+}
+
+.block {
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-color: red;
+  position: relative;
+}
+
+.hangingBlock {
+  margin-left: -10px;
+  transform-origin: 160px;
+}
+
+.blue {
+  background-color: blue;
+  margin-left: -40px;
+}
+
+.green {
+  background-color: green;
+  margin-left: -40px;
+  margin
+}
+
+.purple {
+  background-color: purple;
+  margin-left: -10px;
+  margin-top: -30px;
 }
