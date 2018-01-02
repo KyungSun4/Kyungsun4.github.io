@@ -24,7 +24,7 @@ wave {
 }
 
 #loadBack {
-  background-color: white;
+  background-color: #0090ff;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -53,7 +53,7 @@ wave {
 @keyframes a {
   to {
     transform: translate(0px, 100px);
-    background-color: #FF0059;
+
   }
 }
 
@@ -67,7 +67,7 @@ wave {
 @keyframes c {
   to {
     transform: translate(20px, 90px);
-    background-color: #FF6C00;
+
   }
 }
 
@@ -81,7 +81,7 @@ wave {
 @keyframes e {
   to {
     transform: translate(40px, 74px);
-    background-color: #FFE800;
+
   }
 }
 
@@ -95,7 +95,7 @@ wave {
 @keyframes g {
   to {
     transform: translate(60px, 60px);
-    background-color: #FFCF60;
+
   }
 }
 
@@ -109,7 +109,7 @@ wave {
 @keyframes i {
   to {
     transform: translate(78px, 52px);
-    background-color: #8EB7D1;
+
   }
 }
 
@@ -123,7 +123,7 @@ wave {
 @keyframes k {
   to {
     transform: translate(75px, 72px);
-    background-color: #807CBA;
+
   }
 }
 
@@ -137,7 +137,7 @@ wave {
 @keyframes m {
   to {
     transform: translate(80px, 92px);
-    background-color: #5E6487;
+
   }
 }
 
@@ -151,7 +151,7 @@ wave {
 @keyframes o {
   to {
     transform: translate(100px, 102px);
-    background-color: #876091;
+
   }
 }
 
@@ -165,7 +165,7 @@ wave {
 @keyframes q {
   to {
     transform: translate(120px, 100px);
-    background-color: #A569A5;
+
   }
 }
 
