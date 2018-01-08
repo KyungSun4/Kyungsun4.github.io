@@ -1,5 +1,6 @@
 
 .list-unstyled {
+	margin-left: calc(100vw - 1em - 50px);
 	padding-left: 0;
 	list-style: none;
 
@@ -9,9 +10,34 @@
   position: fixed;
   width: 100%;
 }
+
 .icon {
-  float:right;
+	margin-bottom: 0.8em;
   padding-right: 1em;
+	animation: horizontalRise 1s ease-in-out backwards 1;
+}
+@keyframes horizontalRise {
+  100% {
+    transform: translateX(0px);
+  }
+  90% {
+    transform: translateX(-10px);
+  }
+  80% {
+    transform: translateX(0px);
+  }
+  0% {
+    transform: translateX(100vh);
+  }
+}
+#fa-github {
+	animation-delay: 6.8s;
+}
+#fa-linkedin {
+	animation-delay: 6.9s;
+}
+#fa-youtube {
+	animation-delay: 7s;
 }
 /*---- Genral classes end -------*/
 
@@ -347,6 +373,7 @@ wave {
     transform: translateY(100vh);
   }
 }
+
 
 #games {
   animation-delay: 6.1s;
