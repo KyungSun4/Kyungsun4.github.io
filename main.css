@@ -375,17 +375,15 @@ wave {
 }
 
 
-#games {
-  animation-delay: 6.1s;
+#resume {
+  animation-delay: 6.2s;
 }
 #projects {
   animation-delay: 6.3s;
 }
-
 #about {
   animation-delay: 6.5s;
 }
-
 #contact {
   animation-delay: 6.7s;
 }
@@ -481,13 +479,13 @@ footer {
     margin-left: 100vw;
     background-color: blue;
 }
-.games {
+.projects {
     padding-top: 5vh;
     margin-left: 20vw;
     margin-right: 20vw;
     display: none;
 }
-.game {
+.project {
     padding: 2vw;
     margin-bottom: 10px;
     width: 56vw;
