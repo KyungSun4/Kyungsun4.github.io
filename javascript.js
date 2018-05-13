@@ -112,6 +112,9 @@ $(function() {
     window.setTimeout(doHashCheck, 10)
 
     $(".homeli").click(function(event) {
+      if($(this).attr("id") == "Resume") {
+        break;
+      }
       event.preventDefault();
       window.location.hash = $(this).attr("id");
       if (page != $(this).attr("id")) {
