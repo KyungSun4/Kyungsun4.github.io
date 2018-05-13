@@ -44,7 +44,8 @@ var doHashCheck = function() {
     if(hash != "") {
       hash = hash.substr(1,);
       $("#center").hide();
-      loadPage(hash);
+      setTimeout(function() {loadPage(hash)},5000)
+
     }
 }
 
@@ -112,14 +113,15 @@ $(function() {
     window.setTimeout(doHashCheck, 10)
 
     $(".homeli").click(function(event) {
-      if($(this).attr("id") == "Resume") {
-        break;
-      }
-      event.preventDefault();
-      window.location.hash = $(this).attr("id");
-      if (page != $(this).attr("id")) {
-        console.log($(this).attr("id"));
-        loadPage($(this).attr("id"));
+      if($(this).attr("id") != "Resume") {
+
+
+        event.preventDefault();
+        window.location.hash = $(this).attr("id");
+        if (page != $(this).attr("id")) {
+          console.log($(this).attr("id"));
+          loadPage($(this).attr("id"));
+        }
       }
     });
 });
