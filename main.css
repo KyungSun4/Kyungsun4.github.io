@@ -375,16 +375,16 @@ wave {
 }
 
 
-#resume {
+#resumes {
   animation-delay: 6.2s;
 }
 #projects {
   animation-delay: 6.3s;
 }
-#about {
+#abouts {
   animation-delay: 6.5s;
 }
-#contact {
+#contacts {
   animation-delay: 6.7s;
 }
 
@@ -420,19 +420,19 @@ footer {
     padding-bottom: 10vh;
     text-align: center;
 }
-#redback {
+#resumesback {
     margin-left: 100vw;
     background-color: #b24040;
 }
-#greenback {
+#projectsback {
     margin-left: 100vw;
     background-color: #41af6d;
 }
-#yellowback {
+#aboutsback {
     margin-left: 100vw;
     background-color: #FA8C34;
 }
-#purpleback {
+#contactsback {
     margin-left: 100vw;
     background-color: #209893;
 }
