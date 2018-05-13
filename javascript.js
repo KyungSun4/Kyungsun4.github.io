@@ -72,7 +72,6 @@ var loadPage = function(newPage) {
       marginLeft: "-=100vw",
   }, 500);
   showPage(newPage);
-   // TODO: Fix delays
   page = newPage;
 
 }
@@ -113,7 +112,8 @@ $(function() {
     window.setTimeout(doHashCheck, 10)
 
     $(".homeli").click(function(event) {
-      if($(this).attr("id") != "Resume") {
+      console.log($(this).attr("id"));
+      if($(this).attr("id") != "resumes") {
 
 
         event.preventDefault();
