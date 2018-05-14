@@ -15,49 +15,119 @@
     <li class="icon" id="fa-linkedin"><a href="https://www.linkedin.com/in/john-h-b04840bb/"><i class="fa fa-linkedin" ></i></a></li>
     <li class="icon" id="fa-youtube"><a href="https://www.youtube.com/channel/UC1xVlqhh7ajkc0yOgImm0eg"><i class="fa fa-youtube" ></i></a></li>
   </ul>
-    <div id="loadBack"></div>
-    <div id="wavediv">
-      <wave id="a"></wave>
-      <wave id="c"></wave>
-      <wave id="e"></wave>
-      <wave id="g"></wave>
-      <wave id="i"></wave>
-      <wave id="k"></wave>
-      <wave id="m"></wave>
-      <wave id="o"></wave>
-      <wave id="q"></wave>
-    </div>
-    <img class="titleImg" src="john.png">
-    <ul id="homeul">
-      <li class="homeli fadeinb" id="resumes"><a href="Resume.pdf">Resume</a></li>
-      <li class="homeli fadeinb" id="projects"><a href="#projects">Projects</a></li>
-      <li class="homeli fadeinb" id="abouts"><a href="#about">About</a></li>
-      <li class="homeli fadeinb" id="contacts"><a href="#contact">Contact</a></li>
-    </ul>
-    <br>
+  <div id="loadBack"></div>
+  <div id="wavediv">
+    <wave id="a"></wave>
+    <wave id="c"></wave>
+    <wave id="e"></wave>
+    <wave id="g"></wave>
+    <wave id="i"></wave>
+    <wave id="k"></wave>
+    <wave id="m"></wave>
+    <wave id="o"></wave>
+    <wave id="q"></wave>
+  </div>
+  <img class="titleImg" src="john.png">
+  <ul id="homeul">
+    <li class="homeli fadeinb" id="resumes"><a class="button" href="Resume.pdf">Resume</a></li>
+    <li class="homeli fadeinb" id="projects"><a class="button" href="#projects">Projects</a></li>
+    <li class="homeli fadeinb" id="abouts"><a class="button" href="#about">About</a></li>
+    <li class="homeli fadeinb" id="contacts"><a class="button" href="#contact">Contact</a></li>
+  </ul>
+  <br>
 
-    <div class="projects">
-      <div class="title">PROJECTS</div>
-      <div class="project" num="0">Oh Nice!</div>
-      <div class="project" num="1">Tap Tap</div>
-      <div class="project" num="3">Fleets (work in progress)</div>
-      <div class="project" num="4">Color Snake</div>
-      <div class="project" num="5">Krys Game (incompleate)</div>
-      <div class="project" num="6">Castle Defense</div>
-      <div class="project" num="7">Bubble</div>
-      <div class="project" num="8">Color</div>
-      <div class="project" num="9">Puzzle</div>
-      <div class="project" num="10">Sea Speedster</div>
-      <div class="project" num="11">Hadwriting Decoder</div>
+  <div class="projects">
+    <div class="title">PROJECTS</div>
+    <div class="project" num="0">
+      <h2>Owl Tutoring</h2>
+      <div class="description">A tutoring company established in 2016 to provide afordable peer tutors. As a part of the company I focus on the technical and financial parts of the company. This work involves proccessing payments, paying tutors, and organizing information. In
+        order to do this efficiently, I have automated many of these processes.</div>
+      <div class="info-container">
+        <div class="left3">Founded 2016</div>
+        <div class="center3"><a href="https://www.owltutoring.co">owltutoring.co</a></div>
+        <div class="right3"><a>GitHub</a></div>
+      </div>
     </div>
-    <div class="abouts">
-      <div class="about" num="0">
-        <h2>About</h2>John Han is a student studying computer engineering at the University of Illinois Urbana-Champaign.</div>
+    <div class="project" num="1">
+      <h2>CS 196 Project r/place game</h2>
+      <div class="description">As a class project we wrote a multiplayer online game insipred by the subreddit <a href="https://reddit.com/r/place">r/place.</a> This game combines the multiuser aspects of r/place into a war strategy game. This project was created as a Node.js
+        application that uses MongoDB to store game information. The project also includes user accounts and encrypts user passwords. Live gameplay is updated to the client side using socket.io. More information can be found on the <a href='https://github.com/CS196Illinois/r-place-game/blob/master/README.md'>GitHub Readme</a></div>
+      <div class="info-container">
+        <div class="left3">2017</div>
+        <div class="center3"><a href="http://r-place-game.herokuapp.com/">r-place-game.herokuapp.com</a></div>
+        <div class="right3"><a href="https://github.com/CS196Illinois/r-place-game">GitHub</a></div>
+      </div>
     </div>
-    <div class="back" id="projectsback"></div>
-    <div class="back" id="resumesback"></div>
-    <div class="back" id="aboutsback"></div>
-    <div class="back" id="contactsback"></div>
+    <div class="project" num="2">
+      <h2>im_bot-hi_bot Reddit Bot</h2>
+      <div class="description">A reddit bot that greats people when then introduces themselves by saying I'm ____. The bot will then respond to replies. Uses praw python library. The account was suspended from reddit after making thousands of comments and recieving 18,000 comment
+        karma. No new account was created.
+      </div>
+      <div class="info-container">
+        <div class="left3">2018</div>
+        <div class="center3"><a href="https://www.reddit.com/r/BlackPeopleTwitter/comments/86r2aj/court_was_lit_like_judge_mathis/dw7eb4n/">reddit</a></div>
+        <div class="right3"><a href="https://github.com/KyungSun4/im_bot-hi_bot">GitHub</a></div>
+      </div>
+    </div>
+    <div class="project" num="3">
+      <h2>Illini Solar Car</h2>
+      <div class="description"> As a member of the Illini Solar Car Team I have worked on analyzing race data using python to better understand the cars performance. After this, I have been working on a race simulation and neural network to better determine race strategy based
+        on road and weather conditions. Due to the competitve nature of the team, the code for these projects is not publicly available.
+      </div>
+      <div class="info-container">
+        <div class="left3">2017-Present</div>
+        <div class="center3"><a href="http://illinisolarcar.com/">illinisolarcar.com</a></div>
+        <div class="right3"><a href="https://github.com/IlliniSolarCar">GitHub</a></div>
+      </div>
+    </div>
+    <div class="project" num="4">
+      <h2>iRobotics Combotics Team</h2>
+      <div class="description">
+        As a member of the <a href="http://irobotics.illinois.edu/">iRobotics</a> Combotics team at the University of Illinois I worked with a team to design and build a remote control robot for the <a href="http://robobrawl.engineering.illinois.edu/">Robobrawl</a> competition at <a href="https://www.eoh.ec.illinois.edu/">EOH<a>
+      </div>
+      <div class="info-container">
+        <div class="left3">2017-Present</div>
+        <div class="center3"><a href="http://irobotics.illinois.edu/freshman-combots-post-eoh-wrapup/">Freshman Year Review</a></div>
+        <div class="right3"><a href="https://youtu.be/9mccnIR-VmY?t=14m5s">Video</a></div>
+      </div>
+    </div>
+    <div class="project" num="5">
+      <h2>Fleets/pirates (work in progress)</h2>
+      <div class="description">
+        A multiplayer online game I designed with my brother who created all the game artwork. Players build their fleets and sail them around the map fighting other ships.  While this game is incompleate is it playable. The time of compleation of this project is unknown as much of the code would likely have to be rewritten for it to be manageble.
+        </div>
+      <div class="info-container">
+        <div class="left3">2016</div>
+        <div class="center3"><a href="http://fleetsio.herokuapp.com/">fleetsio.herokuapp.com</a></div>
+        <div class="right3"><a href="https://github.com/KyungSun4/pirates">GitHub</a></div>
+      </div>
+    </div>
+    <div class="project" num="6">
+      <h2>BattleCode</h2>
+      <div class="description">
+        A month long team coding competition run every year by MIT to design an AI to play against other teams. For our bot we coded in Java.
+        </div>
+      <div class="info-container">
+        <div class="left3">2017, 2018</div>
+        <div class="center3"><a href="http://battlecode.org">battlecode.org</a></div>
+        <div class="right3"><a href="https://github.com/JeffreyZh4ng/battlecode-2018-final">GitHub</a></div>
+      </div>
+    </div>
+    <div class="project" num="3">3D printing designs</div>
+    <div class="project" num="7">Tap Tap</div>
+    <div class="project" num="8">Oh Nice!</div>
+    <div class="project" num="9">Krys Game (incompleate)</div>
+    <div class="project" num="10">Color Snake</div>
+    <div class="project" num="11">Gamesald Games</div>
+  </div>
+  <div class="abouts">
+    <div class="about" num="0">
+      <h2>About</h2>John Han is a student studying computer engineering at the University of Illinois Urbana-Champaign.</div>
+  </div>
+  <div class="back" id="projectsback"></div>
+  <div class="back" id="resumesback"></div>
+  <div class="back" id="aboutsback"></div>
+  <div class="back" id="contactsback"></div>
 
 </body>
 <footer>John Han
