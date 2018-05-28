@@ -1,3 +1,8 @@
+// stop animation once all page is loaded
+$(window).on('load', function() {
+    console.log("loaded");
+});
+
 var page = "home";
 
 var backgrounds = ["projectsback", "resumesback", "aboutsback", "contactsback"];
