@@ -1,5 +1,9 @@
 // stop animation once all page is loaded
 $(window).on('load', function() {
+    items = ["#wavediv","#loadBack",".titleImg","#resumes","#projects","#abouts", "#contacts", "#fa-github", "#fa-linkedin", "#fa-youtube" ]
+    for (var i = 0; i < items.length; i++) {
+        $(items[i]).css("animation-play-state", "running");
+    }
     console.log("loaded");
 });
 
